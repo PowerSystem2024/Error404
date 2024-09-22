@@ -19,7 +19,8 @@ print(conjunto2 == conjunto1) # Rta booleana
 
 # Operaciones con conjuntos
 conjunto3 = conjunto2 | conjunto1 # full join
-print(conjunto3)
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issuperset(conjunto1))
 
 conjunto3 = conjunto2 & conjunto1 # inner join
 print(conjunto3)
@@ -29,3 +30,9 @@ print(conjunto3)
 
 conjunto3 = conjunto2 ^ conjunto1 # fullouter join
 print(conjunto3)
+
+# Disconexos
+print(conjunto1.isdisjoint(conjunto2))
+
+# conjunto inmutable
+conjunto1 = frozenset
