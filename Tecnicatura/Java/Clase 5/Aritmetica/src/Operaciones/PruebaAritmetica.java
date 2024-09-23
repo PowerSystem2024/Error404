@@ -7,6 +7,9 @@ public class PruebaAritmetica {
         aritmetica1.a = 3;
         aritmetica1.b = 7;
         aritmetica1.sumarNumeros();
+        
+         int resultado = aritmetica1.sumarConRetorno();
+         System.out.println("resultado = " + resultado);
     } 
     
 } 
