@@ -20,8 +20,8 @@ public class Aritmetica {
     }
     
     public int sumarConArgumentos(int a, int b) {
-       this.a = arg1; //El argumento a se asigna al atributo this.a
-       this.b = arg2;
+       this.a = a; //El argumento a se asigna al atributo this.a
+       this.b = b;
         //return a + b;
         return sumarConRetorno();
     }
