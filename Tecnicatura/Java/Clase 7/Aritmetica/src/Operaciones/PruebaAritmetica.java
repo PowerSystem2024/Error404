@@ -26,8 +26,12 @@ public class PruebaAritmetica {
          System.out.println("aritmetica2 = " + aritmetica2);
          //aritmetica1 = null; nunca utlizar esto, no se debe hacer
          //System.gc(); método para limpiar residuos, es pesado, no utlizar
+         Persona persona = new Persona("Ariel", "Betancud");
+         System.out.println("persona = " + persona);
+         System.out.println("Persona nonmbre: " + persona.nombre);
+         System.out.println("Persona nonmbre: " + persona.apellido);
     } 
-    
+    //Modularidad creamos un nuevo método
     public static void miMetodo() {
         //a = 10; //Una variable esta limitada
         System.out.println("Aqui hay otro método");
@@ -35,3 +39,13 @@ public class PruebaAritmetica {
     }
     
 } 
+//Creamos una nueva clase
+class Persona{
+    String nombre;
+    String apellido;
+    
+    Persona(String nombre, String apellido) { //Constructor
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+}
