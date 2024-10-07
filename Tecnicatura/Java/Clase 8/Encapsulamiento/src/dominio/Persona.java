@@ -3,7 +3,7 @@ package dominio;
 
 public class Persona {
     //Atributos
-    private String nombre;
+    String nombre;
     private double sueldo;
     private boolean eliminado;
     
