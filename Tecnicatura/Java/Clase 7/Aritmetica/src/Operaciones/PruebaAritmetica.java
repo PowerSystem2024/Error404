@@ -28,8 +28,8 @@ public class PruebaAritmetica {
          //System.gc(); método para limpiar residuos, es pesado, no utlizar
          Persona persona = new Persona("Ariel", "Betancud");
          System.out.println("persona = " + persona);
-         System.out.println("Persona nonmbre: " + persona.nombre);
-         System.out.println("Persona nonmbre: " + persona.apellido);
+         System.out.println("Persona nombre: " + persona.nombre);
+         System.out.println("Persona apellido: " + persona.apellido);
     } 
     //Modularidad creamos un nuevo método
     public static void miMetodo() {
@@ -46,6 +46,8 @@ class Persona{
     
     Persona(String nombre, String apellido) { //Constructor
         super(); //Llamada al constructor de la clase Padre object
+        //Imprimir imprimir = new Imprimir();
+        new Imprimir() .imprimir(this);
         this.nombre = nombre;
         this.apellido = apellido;
         System.out.println("Objeto persona usando this: " + this);
