@@ -4,10 +4,7 @@
 
 ## Integrantes del Grupo
 - **Abeiro Roman**
-- **Aybar Ramiro**
 - **Diaz Sebastian**
-- **Malinverno Juan**
-- **Nozikovsky Gonzalo**
 - **Ortega Lucas**
 - **Paez Diego**
 
