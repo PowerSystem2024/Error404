@@ -1,5 +1,0 @@
-
-Seba Diaz -> operaciones basicas
-Lucas Ortega -> operaciones cientificas
-Diego-> operaciones con matrices
-Roman -> interfacez y carga y muestra de matrices
