@@ -11,6 +11,8 @@ public class CalculadoraCientifica {
         manejarOperacionesMatrices();
     }
 
+
+
     // Metodo para manejar las operaciones con matrices
     private static void manejarOperacionesMatrices() {
         System.out.println("Operaciones de Matrices");
@@ -25,6 +27,121 @@ public class CalculadoraCientifica {
         // Crea una instancia de OperacionesMatrices y ejecuta la operación seleccionada
         OperacionesMatrices operacion = new OperacionesMatrices();
         operacion.ejecutarOperacion(subopcion);
+    }
+}
+// Agregar la interfaz para acceder a las operaciones cientificas!!!
+
+// Clase que maneja las operaciones científicas de la calculadora
+class OperacionesCientificas {
+    // Scanner para leer la entrada del usuario
+    private static final Scanner scanner = new Scanner(System.in);
+
+    // Metodo para ejecutar la operación científica seleccionada
+    public void ejecutarOperacion(int opcion) {
+        switch (opcion) {
+            case 1:
+                potencia(); // Ejecuta la potencia
+                break;
+            case 2:
+                raizCuadrada(); // Ejecuta la raíz cuadrada
+                break;
+            case 3:
+                logaritmo(); // Ejecuta el logaritmo
+                break;
+            case 4:
+                seno(); // Calcula el seno
+                break;
+            case 5:
+                coseno(); // Calcula el coseno
+                break;
+            case 6:
+                tangente(); // Calcula la tangente
+                break;
+            default:
+                System.out.println("Opción no válida"); // Mensaje para opciones inválidas
+        }
+    }
+
+    // Metodo para calcular la potencia de un número
+    private void potencia() {
+        double base;
+        // Bucle para asegurar que la base sea mayor a 0
+        do {
+            System.out.print("Ingrese la base: ");
+            base = scanner.nextDouble();
+            if (base <= 0) {
+                System.out.println("Error: La base debe ser un número mayor a 0.");
+            }
+        } while (base <= 0);
+
+        double exponente;
+        // Bucle para asegurar que el exponente sea mayor a 0
+        do {
+            System.out.print("Ingrese el exponente: ");
+            exponente = scanner.nextDouble();
+            if (exponente <= 0) {
+                System.out.println("Error: El exponente debe ser un número mayor a 0.");
+            }
+        } while (exponente <= 0);
+
+        // Calcula y muestra el resultado de la potencia
+        System.out.println("El resultado es " + Math.pow(base, exponente));
+    }
+
+    // Metodo para calcular la raíz cuadrada de un número
+    private void raizCuadrada() {
+        double num;
+        // Bucle para asegurar que el número sea mayor o igual a 0
+        do {
+            System.out.print("Ingrese el número para calcular la raíz cuadrada: ");
+            num = scanner.nextDouble();
+            if (num < 0) {
+                System.out.println("Error: El número debe ser mayor o igual a 0.");
+            }
+        } while (num < 0);
+
+        // Calcula y muestra la raíz cuadrada
+        System.out.println("La raíz cuadrada de " + num + " es: " + Math.sqrt(num));
+    }
+
+    // Metodo para calcular el logaritmo natural de un número
+    private void logaritmo() {
+        double num;
+        // Bucle para asegurar que el número sea positivo
+        do {
+            System.out.print("Ingrese el número para calcular el Logaritmo Natural: ");
+            num = scanner.nextDouble();
+            if (num <= 0) {
+                System.out.println("El logaritmo Natural no está definido para números no positivos.");
+            }
+        } while (num <= 0);
+
+        // Calcula y muestra el logaritmo natural
+        System.out.println("El Logaritmo Natural de " + num + " es: " + Math.log(num));
+    }
+
+    // Metodo para calcular el seno de un ángulo
+    private void seno() {
+        System.out.print("Ingrese el número para calcular el Seno: ");
+        double num = scanner.nextDouble();
+        // Calcula y muestra el seno
+        System.out.println("El Seno de " + num + " es: " + Math.sin(num));
+    }
+
+    // Metodo para calcular el coseno de un ángulo
+    private void coseno() {
+        System.out.print("Ingrese el número para calcular el Coseno: ");
+        double num = scanner.nextDouble();
+        // Calcula y muestra el coseno
+        System.out.println("El Coseno de " + num + " es: " + Math.cos(num));
+    }
+
+    // Metodo para calcular la tangente de un ángulo
+    private void tangente() {
+        System.out.print("Ingrese el número para calcular la Tangente: ");
+        double num = scanner.nextDouble();
+        // Calcula y muestra la tangente
+        System.out.println("La Tangente de " + num + " es: " + Math.tan(num));
     }
 }
 
