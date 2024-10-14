@@ -32,6 +32,16 @@ class Empleado extends Persona {
   set departamento(departamento) {
     this._departamento = departamento;
   }
+  nombreCompleto() {
+    return this._nombre + " " + this._apellido;
+  }
+  //sobreescribiendo el metodo de la clase padre (Object)
+  toString() {
+    // regresa un string
+    //se aplica el polimorfismo que significa = multiples formas en tiempo de ejecucion
+    // el metodo que se ejecuta depende si en una referencia de un tipo de padre o hija
+    return this.nombreCompleto();
+  }
 }
 
 let persona1 = new Persona("Martin", "Perez");
@@ -47,3 +57,8 @@ persona2.nombre = "Maria Laura";
 let empleado1 = new Empleado("Maria", "Gimenez", "Sistema");
 console.log(empleado1);
 console.log(empleado1.nombre);
+console.log(empleado1.nombreCompleto());
+
+//Object.prototype.toString Esta es la manera correcta de acceder a los atributos y metodos de manera dinamica
+console.log(empleado1.toString());
+console.log(persona1.toString());
