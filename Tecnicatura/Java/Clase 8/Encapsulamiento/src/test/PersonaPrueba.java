@@ -6,6 +6,7 @@ import dominio.Persona;
 public class PersonaPrueba {
     public static void main(String[] args) {
         Persona persona1 = new Persona("Osvaldo", 57.00, false);
+        System.out.println("persona1 = " + persona1);
         System.out.println("persona1 su nombre es: "+persona1.getNombre());
         //Modificar a través de los métodos
         persona1.setNombre("Juan Ignacio");
@@ -30,5 +31,7 @@ public class PersonaPrueba {
         System.out.println("persona2 con su nombre modificado: "+persona2.getNombre());
         System.out.println("persona2 el sueldo modificado es: "+persona2.getSueldo()); 
         System.out.println("persona2 el booleano modificado es: "+persona2.isEliminado());
+        
+        System.out.println("persona1 = " + persona1);
     } 
 }
