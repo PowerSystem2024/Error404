@@ -6,30 +6,106 @@ public class CalculadoraCientifica {
     // Scanner para leer la entrada del usuario
     private static final Scanner scanner = new Scanner(System.in);
 
-    // Metodo principal que ejecuta la calculadora
-    public static void main(String[] args) {
-        manejarOperacionesMatrices();
+public static void main(String[] args) {
+    System.out.println("Bienvenido a la aplicación de Calculadora Científica");
+
+    String seguir = "S"; // Variable para controlar el bucle principal
+    while (seguir.equals("S")) {
+        mostrarMenuPrincipal(); // Muestra el menú principal
+        int opcion = scanner.nextInt(); // Lee la opción seleccionada por el usuario
+
+        // Maneja la opción seleccionada
+        switch (opcion) {
+           /*
+           case 1:
+                manejarOperacionesBasicas(); Falta la clase para manejar las OP Basicas
+                break;
+           */ 
+            case 2:
+                manejarOperacionesCientificas(); // Maneja operaciones científicas
+                break;
+            case 3:
+                manejarOperacionesMatrices(); // Maneja operaciones con matrices
+                break;
+            case 4:
+                System.out.println("Saliendo...");
+                seguir = "N"; // Cambia la variable para salir del bucle
+                break;
+            default:
+                System.out.println("Opción no válida"); // Mensaje para opciones inválidas
+        }
+
+        // Pregunta al usuario si desea realizar otra operación
+        if (!seguir.equals("N")) {
+            System.out.print("¿Desea realizar otra operación? (S/N): ");
+            seguir = scanner.next().toUpperCase();
+
+            if (seguir.equals("N")) {
+                System.out.println("Saliendo del programa...");
+            } else if (!seguir.equals("S")) {
+                System.out.println("Opción no válida, redirigiendo al menú principal...");
+                seguir = "S"; // Redirige al menú principal si la opción es inválida
+            }
+        }
     }
-
-
-
-    // Metodo para manejar las operaciones con matrices
-    private static void manejarOperacionesMatrices() {
-        System.out.println("Operaciones de Matrices");
-        System.out.println("1. Suma");
-        System.out.println("2. Resta");
-        System.out.println("3. Multiplicación");
-        System.out.println("4. Determinante");
-        System.out.println("5. Transposición");
-        System.out.print("Seleccione una operación: ");
-        int subopcion = scanner.nextInt();
-
-        // Crea una instancia de OperacionesMatrices y ejecuta la operación seleccionada
-        OperacionesMatrices operacion = new OperacionesMatrices();
-        operacion.ejecutarOperacion(subopcion);
-    }
+    scanner.close(); // Cierra el scanner al finalizar
 }
-// Agregar la interfaz para acceder a las operaciones cientificas!!!
+private static void mostrarMenuPrincipal() {
+    System.out.println("1. Operaciones Básicas");
+    System.out.println("2. Operaciones Científicas");
+    System.out.println("3. Operaciones de Matrices");
+    System.out.println("4. Salir");
+    System.out.print("Seleccione una opción: ");
+}
+
+// Metodo para manejar las operaciones básicas
+private static void manejarOperacionesBasicas() {
+    System.out.println("Operaciones Básicas");
+    System.out.println("1. Suma");
+    System.out.println("2. Resta");
+    System.out.println("3. Multiplicación");
+    System.out.println("4. División");
+    System.out.print("Seleccione una operación: ");
+    int subopcion = scanner.nextInt();
+
+    // Crea una instancia de OperacionesBasicas y ejecuta la operación seleccionada
+    OperacionesBasicas operacion = new OperacionesBasicas();
+    operacion.ejecutarOperacion(subopcion);
+}
+
+// Metodo para manejar las operaciones científicas
+private static void manejarOperacionesCientificas() {
+    System.out.println("Operaciones Científicas");
+    System.out.println("1. Potencia");
+    System.out.println("2. Raíz Cuadrada");
+    System.out.println("3. Logaritmo");
+    System.out.println("4. Seno");
+    System.out.println("5. Coseno");
+    System.out.println("6. Tangente");
+    System.out.print("Seleccione una operación: ");
+    int subopcion = scanner.nextInt();
+
+    // Crea una instancia de OperacionesCientificas y ejecuta la operación seleccionada
+    OperacionesCientificas operacion = new OperacionesCientificas();
+    operacion.ejecutarOperacion(subopcion);
+}
+
+// Metodo para manejar las operaciones con matrices
+private static void manejarOperacionesMatrices() {
+    System.out.println("Operaciones de Matrices");
+    System.out.println("1. Suma");
+    System.out.println("2. Resta");
+    System.out.println("3. Multiplicación");
+    System.out.println("4. Determinante");
+    System.out.println("5. Transposición");
+    System.out.print("Seleccione una operación: ");
+    int subopcion = scanner.nextInt();
+
+    // Crea una instancia de OperacionesMatrices y ejecuta la operación seleccionada
+    OperacionesMatrices operacion = new OperacionesMatrices();
+    operacion.ejecutarOperacion(subopcion);
+}
+
 
 // Clase que maneja las operaciones científicas de la calculadora
 class OperacionesCientificas {
@@ -176,12 +252,23 @@ class OperacionesMatrices {
     // Metodo para cargar una matriz ingresada por el usuario
     private double[][] cargarMatriz(int filas, int columnas) {
         double[][] matriz = new double[filas][columnas];
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                System.out.print("Ingrese el valor para la posición [" + (i + 1) + ", " + (j + 1) + "]: ");
+                matriz[i][j] = scanner.nextDouble();
+            }
+        }
         return matriz;
     }
 
     // Metodo para mostrar una matriz en la consola
     private void mostrarMatriz(double[][] matriz) {
-        System.out.println();
+        for (double[] fila : matriz) {
+            for (double valor : fila) {
+                System.out.print(valor + " ");
+            }
+            System.out.println(); // Salto de línea al final de cada fila
+        }
     }
 
     // Metodo para sumar dos matrices
