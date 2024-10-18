@@ -106,6 +106,107 @@ private static void manejarOperacionesMatrices() {
     operacion.ejecutarOperacion(subopcion);
 }
 
+// Clase que maneja las operaciones básicas de la calculadora
+class OperacionesBasicas {
+    // Scanner para leer la entrada del usuario
+    private static final Scanner scanner = new Scanner(System.in);
+
+    // Metodo para ejecutar la operación básica seleccionada
+    public void ejecutarOperacion(int opcion) {
+        switch (opcion) {
+            case 1:
+                suma(); // Ejecuta la suma
+                break;
+            case 2:
+                resta(); // Ejecuta la resta
+                break;
+            case 3:
+                multiplicacion(); // Ejecuta la multiplicación
+                break;
+            case 4:
+                division(); // Ejecuta la división
+                break;
+            default:
+                System.out.println("Opción no válida"); // Mensaje para opciones inválidas
+        }
+    }
+
+    // Metodo para realizar la suma de números
+    private void suma() {
+        System.out.println("Ejecutando Suma...");
+        System.out.print("Ingrese la cantidad de números a sumar: ");
+        int cantidadNumeros = scanner.nextInt();
+        double resultado = 0;
+
+        // Bucle para sumar los números ingresados por el usuario
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            resultado += scanner.nextDouble();
+        }
+
+        System.out.println("La suma de los números ingresados es: " + resultado);
+    }
+
+    /// Metodo para realizar la resta de números
+    private void resta() {
+        System.out.println("Ejecutando Resta...");
+        System.out.print("Ingrese la cantidad de números a restar: ");
+        int cantidadNumeros = scanner.nextInt();
+        double resultado = 0;
+
+        // Bucle para restar los números ingresados por el usuario
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            double numero = scanner.nextDouble();
+            if (i == 1) {
+                resultado = numero; // Inicializa el resultado con el primer número
+            } else {
+                resultado -= numero; // Resta los siguientes números
+            }
+        }
+
+        System.out.println("La resta de los números ingresados es: " + resultado);
+    }
+
+    // Metodo para realizar la multiplicación de números
+    private void multiplicacion() {
+        System.out.println("Ejecutando Multiplicación...");
+        System.out.print("Ingrese la cantidad de números a multiplicar: ");
+        int cantidadNumeros = scanner.nextInt();
+        double resultado = 1;
+
+        // Bucle para multiplicar los números ingresados por el usuario
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            resultado *= scanner.nextDouble();
+        }
+
+        System.out.println("El producto de los números ingresados es: " + resultado);
+    }
+
+    // Metodo para realizar la división de dos números
+    private void division() {
+        System.out.println("Ejecutando División...");
+        System.out.print("Ingrese el primer número para la división: ");
+        double num1 = scanner.nextDouble();
+        double num2;
+
+        // Bucle para asegurarse de que el divisor no sea cero
+        do {
+            System.out.print("Ingrese el segundo número para la división: ");
+            num2 = scanner.nextDouble();
+            if (num2 == 0) {
+                System.out.println("Error: no se puede dividir por cero.");
+            }
+        } while (num2 == 0);
+
+        double cociente = num1 / num2;
+        int resto = (int) (num1 % num2);
+
+        System.out.println("El cociente de los números ingresados es: " + cociente);
+        System.out.println("El resto de la división es: " + resto);
+    }
+}
 
 // Clase que maneja las operaciones científicas de la calculadora
 class OperacionesCientificas {
