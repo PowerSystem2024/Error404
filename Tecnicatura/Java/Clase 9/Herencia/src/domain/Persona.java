@@ -4,10 +4,10 @@ package domain;
 
 public class Persona {
     //Atributo de herencia
-    private String nombre;
-    private char genero;
-    private int edad;
-    private String direccion;
+    protected String nombre;
+    protected char genero;
+    protected int edad;
+    protected String direccion;
     
     
     //Constructor vacio: este es para crear objetos sin necesidad de inicializar
