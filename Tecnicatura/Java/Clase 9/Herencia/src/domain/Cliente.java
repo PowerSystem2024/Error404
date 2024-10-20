@@ -12,6 +12,7 @@ public class Cliente extends Persona {
     //Constructor
     public Cliente(Date fechaRegistro, boolean vip, String nombre,
              char genero, int edad, String direccion) {
+        super(nombre, genero, edad, direccion);
         this.idCliente = ++Cliente.contadorCliente;
         this.fechaRegistro = fechaRegistro;
         this.vip = vip;

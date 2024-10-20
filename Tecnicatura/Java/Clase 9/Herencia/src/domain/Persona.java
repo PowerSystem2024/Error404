@@ -21,6 +21,13 @@ public class Persona {
         this.nombre = nombre;
     }
 
+    public Persona(String nombre, char genero, int edad, String direccion) { //Constructor 3
+        this.nombre = nombre;
+        this.genero = genero;
+        this.edad = edad;
+        this.direccion = direccion;
+    }
+    
     public String getNombre() {
         return nombre;
     }
@@ -68,7 +75,7 @@ public class Persona {
     
     
     
-    
+        
     
     
     
