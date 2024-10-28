@@ -1,5 +1,6 @@
 @import './base.css';
 
+/*Este estilo lo dejamos*/
 #app {
   max-width: 1280px; /* Establece el ancho máximo del contenedor en 1280px */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -11,6 +12,11 @@ a {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
   color: var(--vt-c-white); /* Establece el color del enlace usando una variable CSS */
 }
+
+
+
+/*Agregaremos esta media query pensando en el responsivo desde ahora por esta regla:*/
+
 @media (max-width: 768px) {
   #app {
     display: flex; /* Aplica un diseño flexible al contenedor */
@@ -26,3 +32,5 @@ a {
     width: 80%; /* Limita el ancho del contenedor al 80% de la pantalla en dispositivos grandes */
   }
 }
+
+
