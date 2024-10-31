@@ -1,5 +1,16 @@
-# Vue 3 + Vite
+# Error404
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Equipo de Desarrollo Web Full Stack - UTN FRSR**
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Bienvenidos al portafolio de **Error404**, un equipo elite de desarrolladores web formados en la Universidad Tecnológica Nacional. Nos especializamos en crear soluciones digitales innovadoras que combinan un diseño atractivo con una funcionalidad robusta. Nuestro equipo domina las últimas tecnologías en desarrollo web y móvil, permitiéndonos ofrecer productos de alta calidad que satisfacen las necesidades específicas de cada cliente.
+
+🌎 **Residencia:** Argentina  
+🔗 **Portafolio:** [Visita nuestro portafolio](https://error404-portfolio.netlify.app/)
+
+## Redes Sociales
+
+[![GitHub](src/assets/github_icon.svg)](https://github.com/PowerSystem2024/Error404)
+
+---
+
+¡Gracias por visitarnos! Nos apasiona desarrollar experiencias digitales impactantes y estamos siempre abiertos a nuevos desafíos.
