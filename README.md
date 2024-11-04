@@ -1,6 +1,6 @@
 # Error404
 
-¡Repositorio del grupo Error404! 
+¡Repositorio del grupo Error404!
 
 ## Integrantes del Grupo
 - **Abeiro Roman**

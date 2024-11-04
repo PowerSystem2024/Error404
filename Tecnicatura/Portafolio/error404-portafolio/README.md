@@ -1,35 +1,16 @@
-# error404-portafolio
+# Error404
 
-This template should help get you started developing with Vue 3 in Vite.
+**Equipo de Desarrollo Web Full Stack - UTN FRSR**
 
-## Recommended IDE Setup
+Bienvenidos al portafolio de **Error404**, un equipo elite de desarrolladores web formados en la Universidad Tecnológica Nacional. Nos especializamos en crear soluciones digitales innovadoras que combinan un diseño atractivo con una funcionalidad robusta. Nuestro equipo domina las últimas tecnologías en desarrollo web y móvil, permitiéndonos ofrecer productos de alta calidad que satisfacen las necesidades específicas de cada cliente.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+🌎 **Residencia:** Argentina  
+🔗 **Portafolio:** [Visita nuestro portafolio](https://error404-portfolio.netlify.app/)
 
-## Customize configuration
+## Redes Sociales
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[![GitHub](src/assets/github_icon.svg)](https://github.com/PowerSystem2024/Error404)
 
-## Project Setup
+---
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+¡Gracias por visitarnos! Nos apasiona desarrollar experiencias digitales impactantes y estamos siempre abiertos a nuevos desafíos.
