@@ -26,6 +26,8 @@ import img26 from '/src/components/icons/pandas.svg';
 import img27 from '/src/components/icons/s3.svg';
 import img28 from '/src/components/icons/sf.svg';
 import img29 from '/src/components/icons/spark.svg';
+import img30 from '/src/components/icons/github.svg';
+import img31 from '/src/components/icons/tableau.svg';
 
 // Se importa ref de vue para poder usarlo
 import { ref } from 'vue';
@@ -36,7 +38,7 @@ const habilidades = ref([
     id: 1,
     nombre: 'Lenguajes de Programación',
     habilidades: [
-      { id: 1, nombre: 'Python', nivel: 'Avanzado', icono: img4 }
+      { id: 1, nombre: 'Python', nivel: 'Intermedio', icono: img4 }
     ]
   },
   {
@@ -53,7 +55,7 @@ const habilidades = ref([
     nombre: 'Frameworks y Librerías',
     habilidades: [
       { id: 1, nombre: 'Pandas', nivel: 'Avanzado', icono: img26 },
-      { id: 2, nombre: 'PySpark', nivel: 'Avanzado', icono: img29 }
+      { id: 2, nombre: 'PySpark', nivel: 'Intermedio', icono: img29 }
     ]
   },
   {
@@ -61,20 +63,22 @@ const habilidades = ref([
     nombre: 'Herramientas',
     habilidades: [
       { id: 1, nombre: 'AWS', nivel: 'Intermedio', icono: img21 },
-      { id: 2, nombre: 'Cloud Formation', nivel: 'Avanzado', icono: img22 },
-      { id: 3, nombre: 'DynamoDB', nivel: 'Avanzado', icono: img23 },
+      { id: 2, nombre: 'Cloud Formation', nivel: 'Intermedio', icono: img22 },
+      { id: 3, nombre: 'DynamoDB', nivel: 'Intermedio', icono: img23 },
       { id: 4, nombre: 'Glue', nivel: 'Intermedio', icono: img24 },
       { id: 5, nombre: 'Lambda', nivel: 'Intermedio', icono: img25 },
-      { id: 4, nombre: 'S3', nivel: 'Intermedio', icono: img27 },
-      { id: 5, nombre: 'Step Function', nivel: 'Intermedio', icono: img28 },
-      { id: 5, nombre: 'Git', nivel: 'Intermedio', icono: img11 }
+      { id: 6, nombre: 'S3', nivel: 'Intermedio', icono: img27 },
+      { id: 7, nombre: 'Step Function', nivel: 'Intermedio', icono: img28 },
+      { id: 8, nombre: 'Git', nivel: 'Intermedio', icono: img11 },
+      { id: 9, nombre: 'GitHub', nivel: 'Intermedio', icono: img30 },
+      { id: 10, nombre: 'Tableau', nivel: 'Avanzado', icono: img31 }
     ]
   },
   {
     id: 5,
     nombre: 'Idiomas',
     habilidades: [
-      { id: 2, nombre: 'Inglés', nivel: 'B2', icono: img20 }
+      { id: 1, nombre: 'Inglés', nivel: 'B2', icono: img20 }
     ]
   }
 ]);

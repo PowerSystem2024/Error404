@@ -6,7 +6,7 @@ import cv from '/src/assets/cv_resume_icon.svg';
 const title = 'Diego Paez';
 const descripcion = 'Técnico Universitario en Programación - UTN FRSR';
 const residencia = 'Pilar, Buenos Aires, Argentina';
-const presentacion = 'Hola, Bienvenido a mi portafolio de proyectos. Soy Data Engineer.';
+const presentacion = 'Hola, Bienvenido a mi página web.';
 const redesSociales = [
   { id: 1, name: 'linkedin', src: linkedin, url: 'https://www.linkedin.com/in/diegoleonardopaez/' },
   { id: 3, name: 'github', src: github, url: 'https://github.com/DiegoLeonardoPaez' },
