@@ -27,15 +27,15 @@ const experiencias = ref([
         titulo: 'BBVA - Data Engineer',
         fecha: 'Julio 2023 - Febrero 2024',
         src: icono3,
-        parrafo: 'Mantenimiento y monitoreo de plataforma on premises de Big Data'
+        parrafo: 'Mantenimiento y monitoreo de plataforma bach on premises de Big Data'
     },
     {
         id: 4,
         titulo: 'Seidor Analytics - Data Engineer',
         fecha: 'Enero 2020 - Julio 2022',
         src: icono4,
-        parrafo: 'Desarrollo y orquestación de procesos ETL, diseño de DW y desarrollo de tableros de control'
-    },,
+        parrafo: 'Desarrollo, orquestación y automatización de procesos ETL, diseño de DW y desarrollo de tableros de control'
+    },
 ]);
 </script>
 

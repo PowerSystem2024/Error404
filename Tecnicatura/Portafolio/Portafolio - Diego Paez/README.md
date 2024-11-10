@@ -5,7 +5,7 @@
 Soy un desarrollador de software de Buenos Aires, Argentina. Actualmente estudio la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional.
 
 ### Portafolio
-
+[https://diego-paez-portafolio.netlify.app/](https://diego-paez-portafolio.netlify.app/)
 
 ## Experiencia
 

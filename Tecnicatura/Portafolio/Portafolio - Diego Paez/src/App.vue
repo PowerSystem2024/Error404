@@ -26,11 +26,6 @@ import InteresesComponente from './components/InteresesComponente.vue';
             <!--Componente Experiencia-->
             <ExperienciaComponente />
         </section>
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <!--Componente Proyectos-->
-            <ProyectosComponente />
-        </section>
         <section id="habilidades">
             <!--Componente Habilidades-->
             <h2>Habilidades</h2>
