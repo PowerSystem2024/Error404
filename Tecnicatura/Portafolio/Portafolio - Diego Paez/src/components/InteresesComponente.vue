@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import FondoLava from './FondoLava.vue';
 
 const intereses = ref([
-    'Innovación en Desarrollo de Software: Me apasiona crear soluciones tecnológicas con impacto positivos en en las empresas',
+    'Innovación en Desarrollo de Software: Me apasiona crear soluciones tecnológicas con impacto positivos en las empresas',
     'Exploración al Aire Libre: Desde rutas de senderismo en montañas hasta recorridos en bicicleta por senderos desconocidos, me encanta descubrir nuevos paisajes y desafiar mis límites físicos y mentales.',
     'Avances Tecnológicos: Siempre a la vanguardia, disfruto aprender sobre servicios de computo en la nube de AWS, inteligencia artificial, machine learning y el impacto de las nuevas tecnologías en la vida cotidiana.'
 ]);
