@@ -12,7 +12,7 @@ const redesSociales = [
   { id: 3, name: 'github', src: github, url: 'https://github.com/DiegoLeonardoPaez' },
   { id: 4, name: 'curriculum', src: cv, url: 'https://docs.google.com/document/d/1xnE6-UOx7pliHiiSCnQSxr4hm3am7rvg3JTJPr7tnpk/edit?usp=drive_link' },
 ];
-const telefono = '+54 9 11 53267764';
+const telefono = '(+549)1153267764';
 </script>
 
 <template>
@@ -26,7 +26,7 @@ const telefono = '+54 9 11 53267764';
           <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
         </li>
       </ul>
-      <h3>☎ Mi Teléfono personal: {{ telefono }}</h3>
+      <h3>☎ Teléfono Personal: {{ telefono }}</h3>
       <h4>{{ residencia }}</h4>
     </div>
   </section>

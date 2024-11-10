@@ -20,14 +20,14 @@ const experiencias = ref([
         titulo: 'ARKHO - Data Engineer',
         fecha: 'Febrero 2024 - Septiembre 2024',
         src: icono2,
-        parrafo: 'Desarrollo y mantenimiento de modelo de predicción de stock en AWS'
+        parrafo: 'Desarrollo, mantenimiento y mejora de modelo de predicción de stock en AWS'
     },
     {
         id: 3,
         titulo: 'BBVA - Data Engineer',
         fecha: 'Julio 2023 - Febrero 2024',
         src: icono3,
-        parrafo: 'Mantenimiento y monitoreo de plataforma bach on premises de Big Data'
+        parrafo: 'Mantenimiento y monitoreo de procesos Bach de Big Data'
     },
     {
         id: 4,
